@@ -393,7 +393,7 @@ h1 {
 .toggle-btn {
   position: absolute;
   right: 1em;
-  top: 0;
+  top: 1em;
 }
 
 .navigation ul {
@@ -405,21 +405,31 @@ h1 {
 }
 
 .navigation ul li:first-child a {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #F6F6F6;
+}
+
+.navigation ul li:last-child a {
+  background-color: #9BA33F;
+  color: #fff;
 }
 
 .navigation ul a {
   display: block;
-  padding: .5em 1em;
-  border-bottom: 1px solid #ccc;
+  padding: 1em 1em;
+  border-bottom: 1px solid #F6F6F6;
   text-decoration: none;
-  color: #fff;
+  color: #222;
   text-align: center;
+  background-color: #F6F6F6;
+}
+
+.navigation ul a:hover {
+  background-color: #BAA2B9;
 }
 
 .toggle-btn,
 .close-btn {
-  color: #222;
+  color: #fff;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -427,7 +437,7 @@ h1 {
 
 .toggle-btn:before,
 .close-btn:before {
-  border: 1px solid #ccc;
+  border: 1px solid #F6F6F6;
   display: inline-block;
   padding: 13px 11px;
   height: 40px;
@@ -478,7 +488,9 @@ h1 {
     bottom: 0;
     height: 100%;
     padding: 0;
-    min-height: 800px;
+    min-height: 100px;
+    text: #222;
+    background-color: #743C70;
   }
 }
 
