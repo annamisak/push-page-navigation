@@ -512,4 +512,18 @@ body.noscript .navigation {
     display: inline-block;
     width: 25%;
   }
+  .navigation ul li:first-child a {
+    border-top: none;
+  }
+  .navigation ul li a {
+    border-bottom: none;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background-color: #743C70;
+  }
+  .navigation ul li a:hover {
+    background-color: #BAA2B9;
+    color: #222;
+  }
 }

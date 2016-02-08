@@ -161,6 +161,22 @@ body.noscript .navigation {
     .navigation ul li {
       float:left;
       display: inline-block;
+      width: 25%;
 
+      &:first-child a {
+        border-top: none;
+      }
+
+      a {
+        border-bottom: none;
+        text-decoration: none;
+        color: $nav-color;
+        text-align: center;
+        background-color: $purple;
+        &:hover {
+        background-color: $light-purple;
+        color: $text-color;
+        }
+      }
     }
 }
