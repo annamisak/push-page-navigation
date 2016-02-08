@@ -123,8 +123,6 @@ h1 {
     &[data-state="slide-open"] {
       overflow: visible;
     }
-
-
   }
 
   //Navigation
@@ -159,10 +157,22 @@ body.noscript .navigation {
   right: auto; //reset position
 }
 @media only screen and (min-width: 60em){
-    .navigation ul li {
-      float:left;
-      display: inline-block;
-      width: 25%;
+  header {
+    padding: 0 0 0 1em;
+    }
+
+  h1 {
+    margin: 0;
+    margin-top: 5px;
+    }
+
+  .navigation ul {
+    margin: 0;
+
+      li {
+        float:left;
+        display: inline-block;
+        width: 25%;
 
       &:first-child a {
         border-top: none;
@@ -175,10 +185,11 @@ body.noscript .navigation {
         text-align: center;
         background-color: $purple;
 
-        &:hover {
-        background-color: $light-purple;
-        color: $text-color;
-        }
+          &:hover {
+          background-color: $light-purple;
+          color: $text-color;
+          }
       }
     }
+  }
 }

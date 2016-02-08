@@ -508,6 +508,16 @@ body.noscript .navigation {
 }
 
 @media only screen and (min-width: 60em) {
+  header {
+    padding: 0 0 0 1em;
+  }
+  h1 {
+    margin: 0;
+    margin-top: 5px;
+  }
+  .navigation ul {
+    margin: 0;
+  }
   .navigation ul li {
     float: left;
     display: inline-block;
