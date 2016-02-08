@@ -510,5 +510,6 @@ body.noscript .navigation {
   .navigation ul li {
     float: left;
     display: inline-block;
+    width: 25%;
   }
 }
