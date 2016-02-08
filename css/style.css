@@ -437,9 +437,10 @@ h1 {
 
 .toggle-btn:before,
 .close-btn:before {
-  border: 1px solid #F6F6F6;
+  border: 0;
   display: inline-block;
   padding: 13px 11px;
+  font-size: 2em;
   height: 40px;
   width: 40px;
 }
