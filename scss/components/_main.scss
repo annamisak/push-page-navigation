@@ -5,16 +5,16 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
-	-moz-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	text-size-adjust: 100%;
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 
 *, *:before, *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 
@@ -31,12 +31,17 @@ body{
 header {
   padding: 0 1em;
   position: relative;
+  background-color: $purple;
+}
+
+h1 {
+  color: $nav-color;
 }
 
 .toggle-btn {
   position: absolute;
   right: 1em;
-  top: 0;
+  top: 1em;
 }
 
 .navigation ul {
@@ -47,22 +52,31 @@ header {
     &:first-child a {
       border-top: 1px solid $light-grey;
     }
+
+    &:last-child a {
+      background-color: $green;
+      color: $nav-color;
+    }
   }
 
   a {
     display: block;
-    padding: .5em 1em;
+    padding: 1em 1em;
     border-bottom: 1px solid $light-grey;
     text-decoration: none;
     color: $text-color;
     text-align: center;
+    background-color: $light-grey;
+    &:hover {
+    background-color: $light-purple;
+  }
   }
 
 }
 
 .toggle-btn,
 .close-btn {
-  color: $text-color;
+  color: $nav-color;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -108,6 +122,8 @@ header {
     &[data-state="slide-open"] {
       overflow: visible;
     }
+
+
   }
 
   //Navigation
@@ -120,7 +136,9 @@ header {
   bottom: 0;
   height: 100%;
   padding: 0;
-  min-height: 800px;
+  min-height: 100px;
+  text: $black;
+  background-color: $purple;
 }
 
 } //max-width media query
@@ -139,6 +157,10 @@ body.noscript .navigation {
   position: static;
   right: auto; //reset position
 }
+@media only screen and (min-width: 60em){
+    .navigation ul li {
+      float:left;
+      display: inline-block;
 
-
-
+    }
+}
